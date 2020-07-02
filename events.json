@@ -1,0 +1,12 @@
+[
+    {
+        "name": "4x4 Germany",
+        "date": "2.7.2020",
+        "types": ["rally"]
+    },
+    {
+        "name": "4x4 Ukraine",
+        "date": "4.7.2020",
+        "types": ["rally", "trophy"]
+    }
+]
