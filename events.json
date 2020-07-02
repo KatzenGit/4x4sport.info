@@ -1,12 +1,16 @@
 [
     {
         "name": "4x4 Germany",
-        "date": "2.7.2020",
+        "start": "2.7.2020",
+        "duration": "2d",
+        "country": "de",
         "types": ["rally"]
     },
     {
         "name": "4x4 Ukraine",
-        "date": "4.7.2020",
+        "start": "4.7.2020",
+        "duration": "7d",
+        "country": "ua",
         "types": ["rally", "trophy"]
     }
 ]
