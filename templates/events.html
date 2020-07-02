@@ -73,6 +73,7 @@
             $(".collapsible").collapsible();
             $("input[type=range]").range();
             $("select").formSelect();
+            $(".tooltipped").tooltip();
         });
 
         // Type Select
@@ -104,7 +105,7 @@
                                 <td>${event.name}</td>
                                 <td>${event.start}</td>
                                 <td>${event.duration}</td>
-                                <td><span class="flag-icon flag-icon-${event.country}"></span></td>
+                                <td><span class="flag-icon flag-icon-${event.country}"></span> ${event.country.toUpperCase()}</td>
                             </tr>
                         `);
                     }
