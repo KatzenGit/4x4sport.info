@@ -40,7 +40,7 @@ app.get("/query", function(req, res) {
     }
     // Filter Type
     if(search_types.length != 5) {
-        data = data.filter(i => search_types.includes(i.type));
+        data = data.filter(i => search_types.some(j => i.types.includes(j)));
     }
 
     // Send Filtered Data
