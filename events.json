@@ -35,6 +35,34 @@
         "types": ["rally"]
     },
     {
+        "name": "Breslau Poland rallye",
+        "start": "15.9.2020",
+        "duration": "5d",
+        "country": "pl",
+        "types": ["rally"]
+    },
+    {
+        "name": "Pomerania 50",
+        "start": "2.10.2020",
+        "duration": "3d",
+        "country": "pl",
+        "types": ["trophy"]
+    },
+    {
+        "name": "Carta rallye",
+        "start": "22.11.2020",
+        "duration": "7d",
+        "country": "mo",
+        "types": ["rally"]
+    },
+    {
+        "name": "TJM adventures Switzerland",
+        "start": "28.8.2020",
+        "duration": "3d",
+        "country": "ch",
+        "types": ["meeting"]
+    },
+    {
         "name": "Rally Albania",
         "start": "6.6.2020",
         "duration": "7d",
