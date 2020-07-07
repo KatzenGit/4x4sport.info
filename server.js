@@ -47,6 +47,6 @@ app.get("/query", function(req, res) {
     res.send(data);
 });
 
-app.listen(80, "localhost", function() {
-    console.log("Started Web Server On Port 80...");
+app.listen(8080, "localhost", function() {
+    console.log("Started Web Server On Port 8080...");
 });
