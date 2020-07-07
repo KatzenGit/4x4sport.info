@@ -7,6 +7,13 @@
         "types": ["rally"]
     },
     {
+        "name": "20. Steinbeisser Trophy",
+        "start": "25.9.2020",
+        "duration": "2d",
+        "country": "de",
+        "types": ["trophy"]
+    },
+    {
         "name": "4x4 Ukraine",
         "start": "4.7.2020",
         "duration": "7d",
