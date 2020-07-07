@@ -28,10 +28,17 @@
         "types": ["trophy","trial"]
     },
     {
-        "name": "Bosnia rally",
+        "name": "Bosnia rally - cancelled",
         "start": "20.7.2020",
         "duration": "6d",
         "country": "ba",
+        "types": ["rally"]
+    },
+    {
+        "name": "Rally Albania",
+        "start": "6.6.2020",
+        "duration": "7d",
+        "country": "al",
         "types": ["rally"]
     },
     {
