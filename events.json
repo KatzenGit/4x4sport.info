@@ -14,6 +14,34 @@
         "types": ["trophy"]
     },
     {
+        "name": "Transsylvania Trophy Romania",
+        "start": "15.9.2020",
+        "duration": "8d",
+        "country": "ro",
+        "types": ["trophy"]
+    },
+    {
+        "name": "ZUB Trial Trophy",
+        "start": "1.8.2020",
+        "duration": "2d",
+        "country": "ua",
+        "types": ["trophy","trial"]
+    },
+    {
+        "name": "Bosnia rally",
+        "start": "20.7.2020",
+        "duration": "6d",
+        "country": "ba",
+        "types": ["rally"]
+    },
+    {
+        "name": "Cupa Drumul Aurului Brad",
+        "start": "7.8.2020",
+        "duration": "3d",
+        "country": "ro",
+        "types": ["trophy"]
+    },
+    {
         "name": "4x4 Ukraine",
         "start": "4.7.2020",
         "duration": "7d",
