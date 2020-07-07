@@ -4,7 +4,7 @@
         "start": "2.7.2020",
         "duration": "2d",
         "country": "de",
-        "types": ["rally"]
+        "types": ["rallye"]
     },
     {
         "name": "20. Steinbeisser Trophy",
@@ -28,18 +28,18 @@
         "types": ["trophy","trial"]
     },
     {
-        "name": "Bosnia rally - cancelled",
+        "name": "Bosnia rallye - cancelled",
         "start": "20.7.2020",
         "duration": "6d",
         "country": "ba",
-        "types": ["rally"]
+        "types": ["rallye"]
     },
     {
-        "name": "Breslau Poland rallye",
+        "name": "Breslau Poland rallyee",
         "start": "15.9.2020",
         "duration": "5d",
         "country": "pl",
-        "types": ["rally"]
+        "types": ["rallye"]
     },
     {
         "name": "Pomerania 50",
@@ -49,11 +49,11 @@
         "types": ["trophy"]
     },
     {
-        "name": "Carta rallye",
+        "name": "Carta rallyee",
         "start": "22.11.2020",
         "duration": "7d",
         "country": "mo",
-        "types": ["rally"]
+        "types": ["rallye"]
     },
     {
         "name": "TJM adventures Switzerland",
@@ -63,11 +63,11 @@
         "types": ["meeting"]
     },
     {
-        "name": "Rally Albania",
+        "name": "rallye Albania",
         "start": "6.6.2020",
         "duration": "7d",
         "country": "al",
-        "types": ["rally"]
+        "types": ["rallye"]
     },
     {
         "name": "Cupa Drumul Aurului Brad",
@@ -81,6 +81,6 @@
         "start": "4.7.2020",
         "duration": "7d",
         "country": "ua",
-        "types": ["rally", "trophy"]
+        "types": ["rallye", "trophy"]
     }
 ]
