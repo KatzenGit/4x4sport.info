@@ -57,5 +57,8 @@ function getEvents(query) {
         data = [];
     }
 
+    let now = new Date();
+    data = data.filter(i => new Date(i.start) > now);
+
     return data;
 }
