@@ -99,6 +99,8 @@
                     let data = JSON.parse(this.responseText);
 
                     $(".event").remove();
+                    if(data.length == 0) $("#content-table").append("<tr class=\"event\"><td class=\"center\" colspan=\"4\">No Events Found.</td></tr>");
+
                     for(const event of data) {
                         $("#content-table").append(`
                             <tr class="event">
