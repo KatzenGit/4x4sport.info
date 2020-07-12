@@ -51,8 +51,11 @@
                                     <option value="meeting" selected>Meeting</option>
                                     <option value="free-driving" selected>Free Driving</option>
                                 </select>
-                                
                             </div>
+                            <label>
+                                <input type="checkbox" class="filled-in" checked="checked" name="future" id="future-select"/>
+                                <span>Only show future events</span>
+                            </label>
                         </form>
                     </div>
                 </li>
@@ -88,6 +91,7 @@
             query += "name=" + $("[name=name]").val();
             query += "&range=" + $("[name=range]").val();
             query += "&types=" + $("[name=types]").val();
+            query += "&future=" + $("[name=future]").prop("checked");
 
             ajax(query);
         });

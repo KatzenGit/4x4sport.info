@@ -32,17 +32,14 @@ app.listen(8080, "localhost", function() {
 function getEvents(query) {
     const events = JSON.parse(fs.readFileSync("events.json"));
 
-    if(Object.keys(query).length == 0) {
-        // Empty Query
-        return events;
-    }
-
     // Set Up Filter Criteria
     let search_name = query.name != "" ? query.name : false;
     if(search_name) search_name = search_name.toLowerCase();
 
     let search_types = query.types != "" ? query.types : false;
     if(search_types) search_types = search_types.split(",");
+
+    let search_future = query.future == "false" ? false : true;
 
     let data = events;
     
@@ -53,12 +50,12 @@ function getEvents(query) {
     // Filter Type
     if(search_types) {
         data = data.filter(i => i.types.some(j => search_types.includes(j)));
-    } else {
-        data = [];
     }
 
-    let now = new Date();
-    data = data.filter(i => new Date(i.start) > now);
+    if(search_future) {
+        let now = new Date();
+        data = data.filter(i => new Date(i.start.split(".")[2], i.start.split(".")[1], i.start.split(".")[0]) > now);
+    }
 
     return data;
 }
