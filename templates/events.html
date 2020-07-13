@@ -72,12 +72,7 @@
     </body>
     <script>
         // Init
-        $(document).ready(function() {
-            $(".collapsible").collapsible();
-            $("input[type=range]").range();
-            $("select").formSelect();
-            $(".tooltipped").tooltip();
-        });
+        M.AutoInit();
 
         // Type Select
         $("#type-label").css("opacity", 0);
@@ -108,7 +103,7 @@
                     for(const event of data) {
                         $("#content-table").append(`
                             <tr class="event">
-                                <td>${event.name}</td>
+                                <td><a href=\"view?id=${event.id}\">${event.name}</a></td>
                                 <td>${event.start}</td>
                                 <td>${event.duration}</td>
                                 <td><span class="flag-icon flag-icon-${event.country}"></span> ${event.country.toUpperCase()}</td>
