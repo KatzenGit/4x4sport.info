@@ -25,6 +25,10 @@ app.get("/query", function(req, res) {
     res.send(getEvents(query));
 });
 
+app.get("/view", function(req, res) {
+    res.sendFile(__dirname + "/templates/view.html");
+});
+
 app.listen(8080, "localhost", function() {
     console.log("Started Web Server On Port 8080...");
 });
@@ -41,6 +45,8 @@ function getEvents(query) {
 
     let search_future = query.future == "false" ? false : true;
 
+    let search_id = query.id;
+
     let data = events;
     
     // Filter Name
@@ -52,9 +58,15 @@ function getEvents(query) {
         data = data.filter(i => i.types.some(j => search_types.includes(j)));
     }
 
+    // Filter Future Only
     if(search_future) {
         let now = new Date();
         data = data.filter(i => new Date(i.start.split(".")[2], i.start.split(".")[1], i.start.split(".")[0]) > now);
+    }
+
+    // Filter Id
+    if(search_id) {
+        data = data.filter(i => i.id == search_id);
     }
 
     return data;
