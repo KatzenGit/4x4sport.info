@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>View</title>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/css/flag-icon.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <nav class="light-blue">
+            <div class="nav-wrapper container">
+                <a href="/" id="brand-logo" class="white-text brand-logo">4x4sport.info</a>
+                <i class="material-icons right">account_box</i>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="hide-on-med-and-up">
+                Minimap
+            </div>
+            <div class="row">
+                <div class="col s12 m8">
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td><div id="name-field"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Start</td>
+                            <td><div id="start-field"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td><div id="duration-field"></div></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col m4 hide-on-small-only">
+                    Maximap
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        let query = new URLSearchParams(document.location.search);
+
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if(this.readyState == 4 && this.status == 200) {
+                let data = JSON.parse(this.responseText);
+
+                let event = data[0];
+
+                $("#name-field").text(event.name);
+                $("#start-field").text(event.start);
+                $("#duration-field").text(event.duration);
+            }
+        };
+
+        xhr.open("GET", "/query?id=" + query.get("id"), true);
+        xhr.send();
+    </script>
+</html>
