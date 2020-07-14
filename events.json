@@ -6,13 +6,15 @@
         "duration": "2d",
         "country": "de",
         "types": ["trophy"],
-        "URL": "http://www.steinbeisser-trophy.de/",
-        "facebook": "https://www.facebook.com/steinbeisser.trophy",
         "locationGPS": [48.892767, 10.966631],
         "location": "Offroad Park Langenaltheim",
         "logo": "1-logo.jpg",
         "classes": ["Adventure", "Adventure+", "Side by side", "Extrem", "Proto"],
-        "media": ["1-poster.jpg"]
+        "media": ["1-poster.jpg"],
+        "links": {
+            "URL": "http://www.steinbeisser-trophy.de/",
+            "facebook": "https://www.facebook.com/steinbeisser.trophy"
+        }
     },
     {
         "id": 2,
@@ -21,15 +23,17 @@
         "duration": "8d",
         "country": "ro",
         "types": ["trophy"],
-        "regURL": "http://www.transsylvaniatrophy.ro/register/",
-        "URL": "http://www.transsylvaniatrophy.ro/",
-        "facebook": "https://www.facebook.com/transsylvaniatrophy/",
         "location": "Cluj county, Romania",
         "locationGPS": [46.603903, 23.280496],
         "logo": "2-logo.png",
         "Description": "The magic of our race? Flawless organization, 20 years of experience, fantastic terrain and, above all, friendship. The only officially recognized international trophy race in Romania. 7 full days of road book adventure. So what do we offer...? Come and find out or talk to participants in previous years.",
         "Classes": ["Adventure","Trophy"],
-        "media": ["2-poster-1.jpg", "2-poster-2.jpg"]
+        "media": ["2-poster-1.jpg", "2-poster-2.jpg"],
+        "links": {
+            "URL": "http://www.transsylvaniatrophy.ro/",
+            "Registation URL": "http://www.transsylvaniatrophy.ro/register/",
+            "Facebook": "https://www.facebook.com/transsylvaniatrophy/"
+        }
     },
     {
         "id": 3,
