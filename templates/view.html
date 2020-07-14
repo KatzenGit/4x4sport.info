@@ -32,7 +32,7 @@
                         <table>
                             <tr>
                                 <td>Name</td>
-                                <td><div id="name-field"></div></td>
+                                <td><span id="name-field"></span></td>
                             </tr>
                             <tr>
                                 <td>Description</td>
@@ -40,19 +40,19 @@
                             </tr>
                             <tr>
                                 <td>Start</td>
-                                <td><div id="start-field"></div></td>
+                                <td><span id="start-field"></span> <span class="new badge red" data-badge-caption="" id="days-left-field"></span></td>
                             </tr>
                             <tr>
                                 <td>Duration</td>
-                                <td><div id="duration-field"></div></td>
+                                <td><span id="duration-field"></span></td>
                             </tr>
                             <tr>
                                 <td>Country</td>
-                                <td><div id="country-field"></div></td>
+                                <td><span id="country-field"></span></td>
                             </tr>
                             <tr>
                                 <td>Classes</td>
-                                <td><div id="classes-field"></div></td>
+                                <td><span id="classes-field"></span></td>
                             </tr>
                         </table>
                     </div>
@@ -106,16 +106,21 @@
                 }
 
                 $("#start-field").text(event.start);
+                $("#days-left-field").text(`
+                    ${
+                        parseInt(
+                            Math.ceil(
+                                Math.abs(new Date() - new Date(event.start.split(".")[2], event.start.split(".")[1] - 1, event.start.split(".")[0])) / 86400000
+                            )
+                        )
+                    } days left!
+                `);
 
                 $("#duration-field").text(event.duration);
 
                 $("#country-field").text(event.country.toUpperCase());
 
-                if(event.classes) $("#classes-field").html(`
-                    <ul>
-                        ${event.classes.map(i => `<li>${i}</li>`).join("")}
-                    </ul>
-                `);
+                if(event.classes) $("#classes-field").html(event.classes.map(i => `<div class="chip">${i}</div>`).join(""));
 
                 if(event.logo) $("#logo-field").html(`
                     <img style="width: 100%; max-width: 200pt;" src="images/${event.logo}"></img>
