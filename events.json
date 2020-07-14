@@ -10,10 +10,10 @@
         "location": "Offroad Park Langenaltheim",
         "logo": "1-logo.jpg",
         "classes": ["Adventure", "Adventure+", "Side by side", "Extrem", "Proto"],
-        "media": ["1-poster.jpg"],
+        "media": ["1-poster.png"],
         "links": {
             "URL": "http://www.steinbeisser-trophy.de/",
-            "facebook": "https://www.facebook.com/steinbeisser.trophy"
+            "Facebook": "https://www.facebook.com/steinbeisser.trophy"
         }
     },
     {
@@ -26,8 +26,8 @@
         "location": "Cluj county, Romania",
         "locationGPS": [46.603903, 23.280496],
         "logo": "2-logo.png",
-        "Description": "The magic of our race? Flawless organization, 20 years of experience, fantastic terrain and, above all, friendship. The only officially recognized international trophy race in Romania. 7 full days of road book adventure. So what do we offer...? Come and find out or talk to participants in previous years.",
-        "Classes": ["Adventure","Trophy"],
+        "description": "The magic of our race? Flawless organization, 20 years of experience, fantastic terrain and, above all, friendship. The only officially recognized international trophy race in Romania. 7 full days of road book adventure. So what do we offer...? Come and find out or talk to participants in previous years.",
+        "classes": ["Adventure","Trophy"],
         "media": ["2-poster-1.jpg", "2-poster-2.jpg"],
         "links": {
             "URL": "http://www.transsylvaniatrophy.ro/",
