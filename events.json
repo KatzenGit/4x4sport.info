@@ -5,7 +5,13 @@
         "start": "25.9.2020",
         "duration": "2d",
         "country": "de",
-        "types": ["trophy"]
+        "types": ["trophy"],
+        "URL": "http://www.steinbeisser-trophy.de/",
+        "facebook": "https://www.facebook.com/steinbeisser.trophy",
+        "locationGPS": [48.892767, 10.966631],
+        "location": "Offroad Park Langenaltheim",
+        "logo": "1-logo.jpg",
+        "classes": ["Adventure", "Adventure+", "Side by side", "Extrem", "Proto"]
     },
     {
         "id": 2,
