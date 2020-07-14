@@ -13,7 +13,15 @@
         "start": "15.9.2020",
         "duration": "8d",
         "country": "ro",
-        "types": ["trophy"]
+        "types": ["trophy"],
+        "regURL": "http://www.transsylvaniatrophy.ro/register/",
+        "URL": "http://www.transsylvaniatrophy.ro/",
+        "facebook": "https://www.facebook.com/transsylvaniatrophy/",
+        "location": "Cluj county, Romania",
+        "locationGPS": [46.603903, 23.280496],
+        "logo": "2-logo.jpg",
+        "Description": "The magic of our race? Flawless organization, 20 years of experience, fantastic terrain and, above all, friendship. The only officially recognized international trophy race in Romania. 7 full days of road book adventure. So what do we offer...? Come and find out or talk to participants in previous years.",
+        "Classes": ["Adventure","Trophy"]
     },
     {
         "id": 3,
