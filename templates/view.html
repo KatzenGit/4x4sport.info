@@ -9,6 +9,9 @@
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="css/general.css">
+        <script src="js/general.js"></script>
     </head>
     <body>
         <nav class="light-blue">
@@ -96,7 +99,6 @@
                 let data = JSON.parse(this.responseText);
 
                 let event = data[0];
-                console.log(JSON.stringify(event));
 
                 $("#name-field").text(event.name);
 
@@ -110,7 +112,7 @@
                     ${
                         parseInt(
                             Math.ceil(
-                                Math.abs(new Date() - new Date(event.start.split(".")[2], event.start.split(".")[1] - 1, event.start.split(".")[0])) / 86400000
+                                Math.abs(new Date() - makeDate(event.start)) / 86400000
                             )
                         )
                     } days left!
@@ -123,13 +125,13 @@
                 if(event.classes) $("#classes-field").html(event.classes.map(i => `<div class="chip">${i}</div>`).join(""));
 
                 if(event.logo) $("#logo-field").html(`
-                    <img style="width: 100%; max-width: 200pt;" src="images/${event.logo}"></img>
+                    <img class="logo" src="images/${event.logo}"></img>
                 `);
 
                 if(event.media) {
                     $("#media-button").removeClass("hide");
                     $("#media").html(event.media.map(i => `
-                        <img src="images/${i}" width="100%"></img>
+                        <img class="media" src="images/${i}"></img>
                     `));
                 }
 

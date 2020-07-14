@@ -1,0 +1,17 @@
+.collapsible li i {
+    transition: 200ms;
+}
+.collapsible li.active i {
+    transform: rotate(180deg);
+
+    transition: 200ms;
+}
+
+.logo {
+    width: 100%;
+    max-width: 200pt;
+}
+
+.media {
+    width: 100%;
+}
