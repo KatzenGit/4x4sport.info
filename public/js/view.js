@@ -13,7 +13,7 @@ xhr.onreadystatechange = function() {
 
         if(event.description) {
             $("#description-button").removeClass("hide");
-            $("#description-field").text(event.description);
+            $("#description-field").html(event.description);
         }
 
         $("#start-field").text(event.start);
