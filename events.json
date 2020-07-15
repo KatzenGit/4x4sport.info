@@ -112,6 +112,25 @@
         },
         "country": "HR",
         "location": "Buzet, Croatia",
-        "LocationGPS": [45.416667,13.966667]
+        "LocationGPS": [45.416667,13.966667],
+        "types": ["trophy"]
+    },
+    {
+        "id": 12,
+        "name": "Fürsten forest 24H race",
+        "links": {
+            "facebook": "https://www.facebook.com/groups/497071250361928/?multi_permalinks=3049634991772195&notif_id=1594812449609876&notif_t=group_activity",
+            "URL": "https://www.24ff.nl/"
+        },
+        "start": "24.10.2020",
+        "duration": "2d",
+        "description:" "Was ist zu erwarten? 8 special stages, 5 verschiedene roadbucher, 100 Deutsche und Hollandische officials und mithelfer, ein rennen nach KNAF / FIA standard fur ein amateur-nenngeld, ein wochenende wettbewerb und spass im wald!",
+        "logo": "12-logo.png",
+        "location": "Off Road Park Fursten Forest",
+        "locationGPS": [52.533767, 7.665370],
+        "country": "DE",
+        "types": ["tropy", "rallye"],
+        "media":["12-poster.png"]
     }
+
 ]
