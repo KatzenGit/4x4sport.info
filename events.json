@@ -97,7 +97,13 @@
         "start": "7.8.2020",
         "duration": "3d",
         "country": "ro",
-        "types": ["trophy"]
+        "types": ["trophy"],
+        "classes": ["hobby", "standard a", "standard b", "open-extrem"],
+        "media": ["10-poster.jpg"],
+        "links": {
+            "URL": "https://www.facebook.com/OffRoadInJudetulHunedoara"
+        },
+        "coordinates": [46.304005, 23.095391]
     },
     {
         "id": 11,
