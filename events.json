@@ -19,7 +19,7 @@
     {
         "id": 2,
         "name": "Transsylvania Trophy Romania",
-        "start": "15.9.2020",
+        "start": "15.8.2020",
         "duration": "8d",
         "country": "ro",
         "types": ["trophy"],
@@ -98,5 +98,20 @@
         "duration": "3d",
         "country": "ro",
         "types": ["trophy"]
+    },
+    {
+        "id": 11,
+        "name": "Wild boar valley challenge",
+        "start": "17.10.2020",
+        "duration": "7d",
+        "classes": ["wild trophy","challenge"],
+        "links": {
+            "URL": "https://www.kamookovidi.com/",
+            "Registration URL": "https://www.kamookovidi.com/registracija/",
+            "Facebook": "https://www.facebook.com/wildboarvalleychallenge/"
+        },
+        "country": "HR",
+        "location": "Buzet, Croatia",
+        "LocationGPS": [45.416667,13.966667]
     }
 ]
