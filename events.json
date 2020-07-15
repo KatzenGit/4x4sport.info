@@ -131,6 +131,23 @@
         "country": "NL",
         "types": ["tropy", "rallye"],
         "media":["12-poster.png"]
+    },
+    {
+        "id": 14,
+        "name": "Blidinje challenge",
+        "links": {
+            "facebook": "https://www.facebook.com/hercegproteam",
+            "URL": "https://www.hercegproteam.com/"
+        },
+        "start": "17.09.2020",
+        "duration": "4d",
+        "description": "Blidinje Challenge is a  completely new dimension of off road races that will bring you top adrenalin, entertainment like no other and a completely new experience. <br> With our many years of experience in organising off road races, this year we have decided to raise the ‘Memorial’ race to a completely new level, a dimension never before seen in our country.<br> Two categories – Adventure and Challenge – will bring together the best regional and global off road drivers fighting for the prize money of as much as <b>10 000 euros</b>.<br> Four days of challenging terrain, completed with a circular race, night driving and individual special tests, will challenge even the most experienced crews.<br> If we say that on top of this there will be two great after parties with live bands, top DJs and a rich raffle – you can be sure that you’re in for one of the craziest off road races ever!<br><br> It’s time for the greatest off road entertainment show in the region!",
+        "locationGPS": [43.652163, 17.532349],
+        "country": "ba",
+        "types": ["tropy", "rallye"],
+        "media":["14-poster-1.png"],
+        "logo": "14-logo.png",
+        "classes": ["Adventure", "Challenge"]
     }
 
 ]
