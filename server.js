@@ -1,5 +1,6 @@
 const express = require("express");
 const cheerio = require("cheerio");
+const { makeDate } = require("./public/js/general.js");
 const fs = require("fs");
 
 const app = express();
@@ -49,6 +50,10 @@ function getEvents(query) {
 
     let search_id = query.id;
 
+    let sort_criteria = query.sort;
+    if(!events[0][sort_criteria]) sort_criteria = "name"; // Fallback From Bad Sort Criteria
+    let sort_direction = query.order;
+
     let data = events;
     
     // Filter Name
@@ -63,13 +68,24 @@ function getEvents(query) {
     // Filter Future Only
     if(search_future) {
         let now = new Date();
-        data = data.filter(i => new Date(i.start.split(".")[2], i.start.split(".")[1], i.start.split(".")[0]) > now);
+        data = data.filter(i => makeDate(i.start) > now);
     }
 
     // Filter Id
     if(search_id) {
         data = data.filter(i => i.id == search_id);
     }
+
+    data = data.sort((a, b) => {
+        if(sort_criteria == "start") {
+            return makeDate(b.start) - makeDate(a.start);
+        } else {
+            return b[sort_criteria].toString().toLowerCase() > a[sort_criteria].toString().toLowerCase();
+        }
+    });
+
+    // Sort Direction
+    if(sort_direction == "up") data = data.reverse();
 
     return data;
 }
