@@ -1,0 +1,70 @@
+html
+    head
+        title Events - 4x4sport.info
+
+        //- Materialize CSS
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+
+        //- Materialize JS
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+        
+        //- Meta
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        //- General Imports
+        link(rel="stylesheet", href="css/general.css")
+        script(src="js/general.js")
+
+        //- Events JS
+        script(src="js/events.js")
+    body
+        nav.light-blue
+            .nav-wrapper.container
+                a.white-text.brand-logo(href="/") 4x4sport
+                ul.right.hide-on-med-and-down
+                    li
+                        a(href="events") Events
+        .container
+            ul.collapsible
+                li
+                    .collapsible-header.center
+                        i#search-collapse.material-icons expand_more
+                    .collapsible-body
+                        form#search-form(action="")
+                            label Name:
+                            input(type="text", name="name")
+                            label Maximum Distance:
+                            p.range-field
+                                input(type="range", name="range", min="0", step="100", max="10000")
+                            .input-field.col.s12
+                                label#type-label Types:
+                                select#type-select(name="types", multiple)
+                                    option(value="trophy", selected)Trophy
+                                    option(value="rallye", selected)Rallye
+                                    option(value="trial", selected)Trial
+                                    option(value="meeting", selected)Meeting
+                                    option(value="free-driving", selected)Free Driving
+                            label
+                                input(type="checkbox", name="future")
+                                span Only show future events
+            table#content-table
+                tr
+                    th#name-tag
+                        Name
+                        br.hide-on-med-and-up
+                        span#name-sort.sort.center
+                    th#start-tag
+                        Start
+                        br.hide-on-med-and-up
+                        span#name-sort.sort.center
+                    th#duration-tag
+                        Duration
+                        br.hide-on-med-and-up
+                        span#name-sort.sort.center
+                    th#country-tag
+                        Country
+                        br.hide-on-med-and-up
+                        span#name-sort.sort.center
+
+    //- Events JS
+    script(src="js/events.js")

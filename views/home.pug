@@ -1,0 +1,35 @@
+html
+    head
+        title Home - 4x4sport.info
+
+        //- Materialize CSS
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+
+        //- Materialize JS
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+        
+        //- Meta
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        //- General Imports
+        link(rel="stylesheet", href="css/general.css")
+        script(src="js/general.js")
+    body
+        nav.light-blue
+            .nav-wrapper.container
+                a.white-text.brand-logo(href="/") 4x4sport
+                ul.right.hide-on-med-and-down
+                    li
+                        a(href="events") Events
+        .container
+            h2.header.center Welcome!
+            .row
+                .col.s12.m6.l4
+                    .card.light-blue
+                        .card-content
+                            span.card-title.white-text Event List
+                        .card-action
+                            a.white-text(href="/events") View >
+    
+    //- Home JS
+    script(src="js/home.js")
